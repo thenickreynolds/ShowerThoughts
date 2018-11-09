@@ -8,20 +8,27 @@
 	<script type="text/javascript" src="script.js"></script>
 </head>
 <body>
-	<img id="loading" src="loading.gif"></img>
-	<div id="image" class="content"></div>
-	<div id="centercontainer" class="content">
+	<img id="loading" src="loading.gif" />
+	
+	<div id="image"></div>
+	<div id="centercontainer">
     	<div id="quote"></div>
 		<div id="author"></div>
 	</div>
-	<div id="picby" class="content"></div>
+	<div id="picby"></div>
 	<div id="button_frame">
 		<div class="button"><a href="https://github.com/thenickreynolds/ShowerThoughts"><img src="github-light-32.png" alt="Github: thenickreynolds"/></a></div>
 		<div class="button" id="refresh"><img src="refresh.png" alt="refresh"/></div>
 	</div>
+	<div id="share_frame">
+		<img src="share.png" alt="Share"/>
+	</div>
 	<div id="todo_frame">
 		<div id="todo_toggle"><img src="todoist.png" alt="Todoist"/></div>
-		<iframe id='todo_iframe' src='about:blank' frameborder='0' />
+		<iframe id='todo_iframe' src='about:blank' frameborder='0'></iframe>
 	</div>
+
+	<canvas id="screenshot_canvas" 	width="2000" height="1000"></canvas>
+	
 </body>
 </html>

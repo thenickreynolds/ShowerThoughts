@@ -1,28 +1,92 @@
 @font-face {
-	font-family: 'font'; /*a name to be used later*/
-	src: url('font.otf'); /*URL to font*/
+  font-family: 'BeautifulFont'; /*a name to be used later*/
+  src: url('font.otf'); /*URL to font*/
 }
 
 body {
-	color:#F0F0F0;
-	font-family: 'font';
-	background-color: #fff;
-	text-shadow: #000 5px 5px 20px;
-	-webkit-font-smoothing: antialiased;
-	padding: 0px;
-	margin: 0px;
+  color:#F0F0F0;
+  font-family: 'BeautifulFont';
+  background-color: #fff;
+  text-shadow: #000 5px 5px 20px;
+  -webkit-font-smoothing: antialiased;
+  padding: 0px;
+  margin: 0px;
 }
 
 #loading {
-	position: absolute;
-	left:50%;
-	top:50%;
-	transform: translate(-50%, -50%);
+  position: absolute;
+  left:50%;
+  top:50%;
+  transform: translate(-50%, -50%);
 }
 
 #image {
-	width: 100%;
-	height: 100%;
+  width: 100%;
+  height: 100%;
+  background: no-repeat center center fixed;
+  background-color: transparent;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#centercontainer {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  left:50%;
+  top:50%;
+  transform: translate(-50%, -50%);
+  display: table;
+  padding: 10%;
+  max-width: 1500px;
+}
+
+#quote {
+  text-align: center;
+  font-size:50px;
+}
+
+#author {
+  margin-top: 40px;
+  text-align: right;
+  font-size: 20px;
+}
+
+#picby {
+  position:absolute;
+  bottom:10px;
+  text-align: center;
+  width: 100%;
+  font-size:14px;
+}
+
+#button_frame {
+  position: absolute;
+  bottom: 20px;
+  left: 0px;
+}
+
+.button {
+  cursor: hand;
+  margin-left: 20px;
+  display: inline;
+}
+
+#share_frame {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  width: 32px;
+  height: 32px;
+  cursor: hand;
+}
+
+#screenshot_canvas {
+	visibility: hidden;
 	background: no-repeat center center fixed;
 	background-color: transparent;
 	-webkit-background-size: cover;
@@ -31,72 +95,29 @@ body {
 	background-size: cover;
 }
 
-#centercontainer {
-	top: 0;
-	left: 0;
-	bottom: 0;
-	right: 0;
-	position: absolute;
-	left:50%;
-	top:50%;
-	transform: translate(-50%, -50%);
-	display: table;
-	padding: 10%;
-}
-
-#quote {
-	text-align: center;
-	font-size:50px;
-}
-
-#author {
-	margin-top: 40px;
-	text-align: right;
-	font-size: 20px;
-}
-
-#picby {
-	position:absolute;
-	bottom:10px;
-	text-align: center;
-	width: 100%;
-	font-size:14px;
-}
-
-#button_frame {
-	position: absolute;
-	bottom: 20px;
-	left: 0px;
-}
-
-.button {
-	cursor: hand;
-	margin-left: 20px;
-	display: inline;
-}
-
 #todo_frame {
-	position: absolute;
+  visibility: collapse;
+  position: absolute;
   bottom: 0px;
   width: 360px;
-	right: 20px;
+  right: 20px;
 }
 
 #todo_toggle {
-	width: 32px;
-	height: 32px;
-	padding-bottom: 20px;
-	right: 0px;
-	float: right;
-	cursor: hand;
+  width: 32px;
+  height: 32px;
+  padding-bottom: 20px;
+  right: 0px;
+  float: right;
+  cursor: hand;
 }
 
 #todo_iframe {
-	width: 100%;
-	height: 400px;
-	display: none;
-	background-color: white;
-	overflow: hidden;
+  width: 100%;
+  height: 400px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
 }
 
 a {
