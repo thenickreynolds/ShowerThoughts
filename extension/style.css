@@ -86,7 +86,7 @@ body {
 }
 
 #screenshot_canvas {
-	visibility: hidden;
+	display: none;
 	background: no-repeat center center fixed;
 	background-color: transparent;
 	-webkit-background-size: cover;
